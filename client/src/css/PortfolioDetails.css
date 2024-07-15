@@ -1,0 +1,87 @@
+/* PortfolioDetails.css */
+.portfolio-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-details-container header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #45a049;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.portfolio-details-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.image-container {
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image-container p {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.image-upload {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.upload-label {
+  background-color: #45a049;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background-color 0.3s;
+}
+
+.upload-label:hover {
+  background-color: #3c8c40;
+}
+
+.back-button {
+  background-color: #45a049;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #3c8c40;
+}

@@ -1,0 +1,56 @@
+/* DefaultPortfolio.css */
+.default-portfolio-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f4f4f4; /* Add a light background color */
+  border-radius: 10px; /* Round the corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.default-portfolio-container header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #45a049; /* Dark background for the header */
+  color: #fff; /* White text color */
+  border-radius: 10px 10px 0 0; /* Round the top corners to match the container */
+}
+
+.default-portfolio-container h1 {
+  font-size: 2rem;
+  color: #333; /* Dark text color for contrast */
+}
+
+.portfolio-content {
+  margin-top: 2rem;
+  color: black;
+}
+
+.portfolio-content h2 {
+  font-size: 1.5rem;
+  color: #333; /* Dark text color for contrast */
+}
+
+.portfolio-content p {
+  font-size: 1rem;
+  line-height: 1.5; /* Increase line height for readability */
+}
+
+.portfolio-content img, .portfolio-content video {
+  max-width: 100%; /* Ensure media doesn't exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.portfolio-content button {
+  background-color: #45a049; 
+  color: #fff; /* White text color */
+  padding: 0.75rem 1rem; /* Add some padding */
+  border: none; /* Remove the default border */
+  border-radius: 5px; /* Round the corners */
+  cursor: pointer; /* Change the cursor when hovering over the button */
+  margin-top: 1rem; /* Add some space above the button */
+}
+
+.portfolio-content button:hover {
+  background-color: #038e36; /* Darken the button when hovered over */
+}

@@ -1,0 +1,251 @@
+/* New styles for HomePage component */
+
+:root {
+  --background-color: white;
+  --text-color: black;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --link-color: black;
+  --link-hover-color: #4CAF50;
+  --input-border-color: #ccc;
+  --button-color: #4CAF50;
+  --button-hover-color: #45a049;
+  --hero-background-color: #f0f0f0;
+  --hero-text-color: white;
+  --about-background-color: #ffffff;
+  --about-text-color: #333333;
+  --about-paragraph-color: #666666;
+  --contact-background-color: #f0f0f0;
+  --contact-text-color: black;
+  --modal-background-color: rgba(0, 0, 0, 0.75);
+}
+
+.homepage-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  background-color: var(--background-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.logo {
+  width: 180px;
+  /* Set the desired width */
+  height: auto;
+  margin-right: 1rem;
+  /*move it over to the right a bit*/
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  color: var(--text-color);
+  margin-right: auto;
+}
+
+.nav-links li {
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--link-color);
+  position: relative;
+}
+
+/*aadding green underline affect when hovering*/
+.nav-links a:hover {
+  color: var(--link-hover-color);
+  /* Change text color on hover */
+}
+
+.nav-links a::after {
+  content: '';
+  /* Create an empty pseudo-element for the underline */
+  display: block;
+  height: 2px;
+  /* Set the height of the underline */
+  width: 0;
+  background-color: #4CAF50;
+  /* Set the color of the underline */
+  transition: width 0.3s;
+  /* Add a transition effect */
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  /* Expand the width on hover */
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.auth-buttons button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: var(--button-color);
+  border-radius: 8px;
+}
+
+.auth-buttons button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust color and opacity as needed */
+  z-index: 0;
+}
+
+.hero-section {
+  position: relative;
+  background-color: var(--hero-background-color);
+  padding: 6rem;
+  text-align: center;
+  background-image: url('https://www.rowan.edu/_files/_files/images/about_new.jpg'); /* Add your image path here */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  
+    position: relative;
+    z-index: 0; /* Ensures the text appears above the overlay */
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--hero-text-color);
+  
+}
+
+.hero-p{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.get-started-btn {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #4CAF50;
+  border-radius: 8px;
+}
+
+.get-started-btn:hover {
+  background-color: #45a049;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/*About Section*/
+.about-section {
+  background-color: var(--about-background-color);
+  /* Set the background color for the About section */
+  padding: 6rem;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  gap: 2rem;
+  /* Adjust the gap between text and image */
+
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--about-text-color);
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  color: var(--about-paragraph-color);
+  max-width: 90%;
+}
+
+.aboutUs-img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*Contact Us section*/
+
+.contact-section {
+  background-color: var(--contact-background-color);
+  padding: 6rem;
+  text-align: center;
+}
+
+.contact-content {
+  color: var(--contact-text-color);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  /* adjust width */
+  height: 60%;
+  /* adjust height */
+  outline: none;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--modal-background-color); /* adjust the last value for transparency */
+  -webkit-backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px); /* apply a blur effect */
+  backdrop-filter: blur(1px); /* apply a blur effect */
+  -moz-backdrop-filter: blur(1px); /* apply a blur effect for Firefox */
+}
+
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+  
+  .about-section {
+    grid-template-columns: 1fr; /* Stack image and text on small screens */
+  }
+  
+  /* Adjust modal size for mobile */
+  .modal-content {
+    width: 90%;
+    height: auto;
+  }
+}
+

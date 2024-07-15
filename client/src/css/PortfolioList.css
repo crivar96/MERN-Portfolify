@@ -1,0 +1,62 @@
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 90%;
+}
+
+.add-portfolio-card {
+  background-color: var(--dashboard-portfolio-bg-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.add-portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-card {
+  background-color: var(--dashboard-portfolio-bg-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-card h3 {
+  color: var(--dashboard-portfolio-text-color);
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.portfolio-card p {
+  color: var(--dashboard-portfolio-text-color);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.portfolio-card a {
+  color: var(--dashboard-button-color);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+.portfolio-card a:hover {
+  color: var(--dashboard-button-hover-color);
+} 

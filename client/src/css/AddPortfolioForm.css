@@ -1,0 +1,32 @@
+/* AddPortfolioForm.css */
+
+.add-portfolio-form .form-group {
+  margin-bottom: 10px;
+}
+
+.add-portfolio-form form {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.add-portfolio-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.add-portfolio-form input,
+.add-portfolio-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-portfolio-form input:hover,
+.add-portfolio-form input:focus,
+.add-portfolio-form textarea:hover,
+.add-portfolio-form textarea:focus {
+  border-color: var(--dashboard-button-color);
+}
+
